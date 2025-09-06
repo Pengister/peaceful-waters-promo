@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peaceful Waters Tranquility — Choose Your Language</title>
+<style>
+:root{
+  --primary:#286985;
+  --secondary:#3c656d;
+  --accent:#a88f42;
+  --bg:#f6fbfd;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#0b1c22;background:var(--bg);}
+.container{max-width:1100px;margin:0 auto;padding:28px 20px;}
+.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px;}
+.brand{font-weight:800;letter-spacing:.3px;color:var(--primary);}
+.langselect select{padding:10px 12px;border:1.5px solid #cfe5ee;border-radius:10px;background:#fff}
+.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:36px;align-items:center;padding:30px 0}
+.hero h1{font-size:44px;color:var(--primary);line-height:1.05;margin-bottom:8px;}
+.hero p.sub{font-size:20px;margin:6px 0 14px 0;color:#123}
+.ctas a{display:inline-block;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:700;margin-right:10px}
+.ctas a.primary{background:var(--primary);color:#fff}
+.ctas a.secondary{border:2px solid var(--primary);color:var(--primary)}
+.figure img{width:100%;max-width:520px;border-radius:16px;box-shadow:0 15px 35px rgba(0,0,0,.18)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:18px 0 8px 0}
+.card{background:#fff;border-radius:16px;padding:18px;box-shadow:0 10px 25px rgba(0,0,0,.07)}
+.card h3{color:var(--primary);margin-bottom:6px}
+.translations .pill{display:inline-block;background:#eef6f9;color:#123;border:1px solid #cfe5ee;padding:8px 12px;border-radius:999px;margin:6px}
+.footer{text-align:center;color:#5a6b70;padding:26px 8px;margin-top:20px}
+.gridlang{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:14px}
+.langbtn{display:block;border:1.5px solid #cfe5ee;background:#fff;border-radius:12px;padding:12px 14px;text-decoration:none;color:#123}
+.langbtn b{color:var(--primary)}
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .hero h1{font-size:34px}
+  .grid3{grid-template-columns:1fr}
+  .gridlang{grid-template-columns:1fr 1fr}
+}
+</style>
+<script>
+function goToLang(sel) {
+  var val = sel.value;
+  if (val) window.location.href = "pages/peaceful_waters_" + val + ".html";
+}
+</script>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="brand">Kerry’s Place • Visual Journey</div>
+    <div class="langselect">
+      <label for="lang" style="margin-right:8px;color:#345;">Choose language:</label>
+      <select id="lang" onchange="goToLang(this)">
+        <option value="">Select…</option>
+        <option value="en">English (English)</option><option value="es">Español (Spanish)</option><option value="fr">Français (French)</option><option value="it">Italiano (Italian)</option><option value="de">Deutsch (German)</option><option value="pt">Português (Portuguese)</option><option value="nl">Nederlands (Dutch)</option><option value="pl">Polski (Polish)</option><option value="hi">हिन्दी (Hindi)</option><option value="ko">한국어 (Korean)</option><option value="ja">日本語 (Japanese)</option><option value="zh">中文 (Chinese)</option><option value="ar">العربية (Arabic)</option><option value="sw">Kiswahili (Swahili)</option><option value="fil">Filipino (Filipino)</option><option value="tr">Türkçe (Turkish)</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div>
+      <h1>Peaceful Waters Tranquility</h1>
+      <p class="sub">Find your calm in seconds. <strong>Available in 15 translations.</strong></p>
+      <div class="ctas">
+        <a class="primary" href="https://thekerrysplace.com/" target="_blank" rel="noopener">Experience Peace Today</a>
+        <a class="secondary" href="https://kerrysvisualjourney.zenfoliosite.com/" target="_blank" rel="noopener">Shop on Zenfolio</a>
+      </div>
+      <div class="translations" style="margin-top:16px;">
+        <span class="pill">Español</span><span class="pill">Français</span><span class="pill">Italiano</span><span class="pill">Deutsch</span><span class="pill">Português</span><span class="pill">Nederlands</span><span class="pill">Polski</span><span class="pill">हिन्दी</span><span class="pill">한국어</span><span class="pill">日本語</span><span class="pill">中文</span><span class="pill">العربية</span><span class="pill">Kiswahili</span><span class="pill">Filipino</span><span class="pill">Türkçe</span>
+      </div>
+    </div>
+    <div class="figure"><img src="assets/peaceful_waters.jpg" alt="Curtis & Tina Norton"></div>
+  </div>
+
+  <h3 style="color:#286985;margin-top:10px;">Quick Language Links</h3>
+  <div class="gridlang">
+    <a class="langbtn" href="pages/peaceful_waters_en.html"><b>English</b><br/><small>English</small></a><a class="langbtn" href="pages/peaceful_waters_es.html"><b>Español</b><br/><small>Spanish</small></a><a class="langbtn" href="pages/peaceful_waters_fr.html"><b>Français</b><br/><small>French</small></a><a class="langbtn" href="pages/peaceful_waters_it.html"><b>Italiano</b><br/><small>Italian</small></a><a class="langbtn" href="pages/peaceful_waters_de.html"><b>Deutsch</b><br/><small>German</small></a><a class="langbtn" href="pages/peaceful_waters_pt.html"><b>Português</b><br/><small>Portuguese</small></a><a class="langbtn" href="pages/peaceful_waters_nl.html"><b>Nederlands</b><br/><small>Dutch</small></a><a class="langbtn" href="pages/peaceful_waters_pl.html"><b>Polski</b><br/><small>Polish</small></a><a class="langbtn" href="pages/peaceful_waters_hi.html"><b>हिन्दी</b><br/><small>Hindi</small></a><a class="langbtn" href="pages/peaceful_waters_ko.html"><b>한국어</b><br/><small>Korean</small></a><a class="langbtn" href="pages/peaceful_waters_ja.html"><b>日本語</b><br/><small>Japanese</small></a><a class="langbtn" href="pages/peaceful_waters_zh.html"><b>中文</b><br/><small>Chinese</small></a><a class="langbtn" href="pages/peaceful_waters_ar.html"><b>العربية</b><br/><small>Arabic</small></a><a class="langbtn" href="pages/peaceful_waters_sw.html"><b>Kiswahili</b><br/><small>Swahili</small></a><a class="langbtn" href="pages/peaceful_waters_fil.html"><b>Filipino</b><br/><small>Filipino</small></a><a class="langbtn" href="pages/peaceful_waters_tr.html"><b>Türkçe</b><br/><small>Turkish</small></a>
+  </div>
+
+  <div class="footer">© 2025 Kerry’s Place Publishing • All Rights Reserved</div>
+</div>
+</body>
+</html>
